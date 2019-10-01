@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>마리오오</title>
+	<style type="text/css">
+		body{margin-left: 0; height:100%; width: auto;}
+		#first{height: 100%; width: auto; background: url(first1.jpg); background: cover;}
+		#logo{height: 25%; align-content: center; position: absolute; top: 390px; left: 490px; opacity: 0.5; }
+		#logo:hover {height: 35%; position: absolute; top:340px; left:440px; opacity: 1;}
+		#back{height:100%; width: auto;  position: absolute; top: 0px; left: 0px; display: none;}
+
+		.ma1{width: 10%; position: absolute; top: 170px; left: 130px; opacity: 0; animation: maa 0.5s linear infinite;display: none;}
+				@keyframes maa { from { top: 170px; width: 10%;}
+								to {top: 180px; width: 10.5%;}}
+		.ma1:hover {opacity: 1; width: 12%; }
+		.ma12{width: 20%; position: absolute; top: 130px; left: 310px; opacity: 0;}
+
+		.lu1{width: 5%; position: absolute; top: 330px; right: 130px; opacity: 0; animation: luu 0.7s linear infinite;display: none;}
+				@keyframes luu { from { top: 330px; width: 5%;}
+								to {top: 300px; width: 5.2%;}}
+		.lu1:hover {opacity: 1; width: 6%; }
+		.lu12{width: 20%; position: absolute; top: 120px; right: 150px; opacity: 0;}
+
+		.misa1{width: 7%; position: absolute; top: 70px; right: 0px; opacity:0; animation: mii 9s linear infinite; display: none;}
+				@keyframes mii { from { right: 0px; }
+								to {right: 1700px;}}
+		.misa1:hover {opacity: 1; width: 8%; }
+		.misa12{width: 20%; position: absolute; top: 100px; right: 540px; opacity: 0;}
+
+		.co1{width: 2%; position: absolute; top: 580px; left: 353px; opacity:0; animation: coo 0.5s linear infinite; display: none;}
+				@keyframes coo { from { top: 489px; width: 1.9%;}
+								to {top: 465px; width: 2.1%;}}
+		.co1:hover {opacity: 1; width: 3%; }
+		.co12{width: 17%; position: absolute; top: 220px; left: 90px; opacity: 0;}
+
+		.br1{width: 2%; position: absolute; bottom:96px; left: 0px; opacity:0; animation: brr 12s infinite linear alternate; display: none;}
+				@keyframes brr { from { left: 0px; }
+								to { left: 735px;}}
+		.br1:hover {opacity: 1; width: 2.3%; }
+		.br12{width: 13%; position: absolute; top: 280px; right: 980px; opacity: 0;}
+
+		.tur1{width: 3%; position: absolute; bottom:100px; left: 820px; opacity:0; animation: tuu 2s infinite linear alternate; display: none;}
+				@keyframes tuu { from { left: 820px; }
+								to { left: 1050px;}}
+		.tur1:hover {opacity: 1; width: 4%; }
+		.tur12{width: 20%; position: absolute; top: 410px; left: 750px; opacity: 0;}
+
+		.mu1{width: 3%; position: absolute; top: 481px; left: 550px; opacity:0; animation: muu 4s infinite linear alternate; display: none;}
+				@keyframes muu { from { left: 485px; }
+								to { left: 605px;}}
+		.mu1:hover {opacity: 1; width: 3.5%; }
+		.mu12{width: 20%; position: absolute; top: 260px; left: 500px; opacity: 0;}
+
+		.fl1{width: 5%; position: absolute; bottom: 200px; right: 273px; opacity: 0; animation: fll 1.7s linear infinite;display: none;}
+				@keyframes fll { from { height: 100px; }
+								to {height: 115px; }}
+		.fl1:hover {opacity: 1; width: 5%; }
+		.fl12{width: 22%; position: absolute; top: 255px; right: 310px; opacity: 0;}
+	
+	</style>
+</head>
+<body>
+	<div>
+		<img src="logo.png" id="logo">
+		<img src="first1.jpg" id="first">
+	</div>
+
+	<div>
+		<img src="back2.jpg" id="back">
+		<img src="ma1.png" class="ma1" id="ma11">
+		<img src="popma.gif" class="ma12" id="ma22">
+		<audio src="aa.mp3" id="aa" loop></audio>
+
+		<img src="lu1.png" class="lu1" id="lu11">
+		<img src="dancelu.gif" style='filter: fliph()' class="lu12" id="lu22">
+		<audio src="bb.mp3" id="bb" loop></audio>
+		
+		<img src="mis.gif" class="misa12" id="mi22">
+		<img src="misa1.png" class="misa1" id="mi11">
+		<audio src="cc.mp3" id="cc" loop></audio>
+
+		<img src="co1.png" class="co1" id="co11">
+		<img src="coin.gif" class="co12" id="co22">
+		<audio src="dd.mp3" id="dd" loop></audio>
+
+		<img src="br1.png" class="br1" id="br11">
+		<img src="shakema.gif" class="br12" id="br22">
+		<audio src="ee.mp3" id="ee" loop></audio>
+
+		<img src="tur1.png" class="tur1" id="tu11">
+		<img src="tur.gif" class="tur12" id="tu22">
+		<audio src="ff.mp3" id="ff" loop></audio>
+
+		<img src="muuu.gif" class="mu12" id="mu22">
+		<img src="mu1.png" class="mu1" id="mu11">
+		<audio src="gg.mp3" id="gg" loop></audio>
+
+		<img src="ending.gif" class="fl12" id="fl22">
+		<img src="fl1.png" class="fl1" id="fl11">
+		<audio src="hh.mp3" id="hh" loop></audio>
+	</div>
+
+	<script type="text/javascript">
+		logo.onclick = function () {
+			first.style.opacity = "0";
+			logo.style.opacity = "0";
+			ma11.style.opacity = "0.5";
+			lu11.style.opacity = "0.5";
+			mi11.style.opacity = "0.5";
+			co11.style.opacity = "0.5";
+			br11.style.opacity = "0.5";
+			tu11.style.opacity = "0.5";
+			mu11.style.opacity = "0.5";
+			fl11.style.opacity = "0.5";
+			back.style.display = "block";
+			ma11.style.display = "block";
+			lu11.style.display = "block";
+			mi11.style.display = "block";
+			co11.style.display = "block";
+			br11.style.display = "block";
+			tu11.style.display = "block";
+			mu11.style.display = "block";
+			fl11.style.display = "block";
+		}
+		aa.volume = 0.4;
+		var ma11state = "off";
+		ma11.onclick = function (){
+			if(ma11state == "off"){
+				aa.play(); ma11state = "on";
+				ma11.style.opacity = "1";
+				ma22.style.opacity = "1";
+			}
+			else{
+				aa.pause(); ma11state = "off";
+				ma11.style.opacity = "0.5";
+				ma22.style.opacity = "0";
+				
+			}
+		}
+		var lu11state = "off";
+		lu11.onclick = function (){
+			if(lu11state == "off"){
+				bb.play(); lu11state = "on";
+				lu11.style.opacity = "1";
+				lu22.style.opacity = "1";
+			}
+			else{
+				bb.pause(); lu11state = "off";
+				lu11.style.opacity = "0.5";
+				lu22.style.opacity = "0";
+				
+			}
+		}
+		var mi11state = "off";
+		mi11.onclick = function (){
+			if(mi11state == "off"){
+				cc.play(); mi11state = "on";
+				mi11.style.opacity = "1";
+				mi22.style.opacity = "1";
+			}
+			else{
+				cc.pause(); mi11state = "off";
+				mi11.style.opacity = "0.5";
+				mi22.style.opacity = "0";
+				
+			}
+		}
+		var co11state = "off";
+		co11.onclick = function (){
+			if(co11state == "off"){
+				dd.play(); co11state = "on";
+				co11.style.opacity = "1";
+				co22.style.opacity = "1";
+			}
+			else{
+				dd.pause(); co11state = "off";
+				co11.style.opacity = "0.5";
+				co22.style.opacity = "0";
+				
+			}
+		}
+		var br11state = "off";
+		br11.onclick = function (){
+			if(br11state == "off"){
+				ee.play(); br11state = "on";
+				br11.style.opacity = "1";
+				br22.style.opacity = "1";
+				ee.volume = 0.3;
+			}
+			else{
+				ee.pause(); br11state = "off";
+				br11.style.opacity = "0.5";
+				br22.style.opacity = "0";
+				
+			}
+		}
+		var tu11state = "off";
+		tu11.onclick = function (){
+			if(tu11state == "off"){
+				ff.play(); tu11state = "on";
+				tu11.style.opacity = "1";
+				tu22.style.opacity = "1";
+			}
+			else{
+				ff.pause(); tu11state = "off";
+				tu11.style.opacity = "0.5";
+				tu22.style.opacity = "0";
+				
+			}
+		}		
+		
+		var mu11state = "off";
+		mu11.onclick = function (){
+			if(mu11state == "off"){
+				gg.play(); mu11state = "on";
+				mu11.style.opacity = "1";
+				mu22.style.opacity = "1";
+				gg.volume = 0.3;
+			}
+			else{
+				gg.pause(); mu11state = "off";
+				mu11.style.opacity = "0.5";
+				mu22.style.opacity = "0";
+				
+			}
+		}
+		
+		var fl11state = "off";
+		fl11.onclick = function (){
+			if(fl11state == "off"){
+				hh.play(); fl11state = "on";
+				fl11.style.opacity = "1";
+				fl22.style.opacity = "1";
+				hh.volume = 1.5;
+			}
+			else{
+				hh.pause(); fl11state = "off";
+				fl11.style.opacity = "0.5";
+				fl22.style.opacity = "0";
+			}
+		}			
+		
+	</script>
+</body>
+
+</html>
